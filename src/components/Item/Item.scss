@@ -1,0 +1,53 @@
+@import 'src/variables';
+
+.list-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 8px;
+  border: 1px solid $secondary;
+  background-color: white;
+
+  &__title {
+    flex: 1;
+    font-weight: 500;
+    color: black;
+    min-height: 18px;
+    text-transform: capitalize;
+  }
+
+  &__desc {
+    color: $secondary;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $secondary;
+  }
+
+  &__delete {
+    display: none;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background-color: red;
+    color: white;
+  }
+
+  &-done {
+    background-color: $primary;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 24px 0 8px;
+}
+
+.show-button {
+  .list-item__delete {
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+#root {
+  width: 100%;
+  min-width: 360px;
+  max-width: 768px;
+  padding: 0 30px;
+}
+
+html {
+  background-color: rgb(166, 165, 165);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 22px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input[type='checkbox'] {
+  margin: 0;
+  accent-color: black;
+}
+
+.w100 {
+  width: 100%;
+}

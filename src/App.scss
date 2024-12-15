@@ -1,0 +1,73 @@
+@import 'src/variables';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-chip {
+    margin-top: 4px;
+    align-self: flex-start;
+    padding: 4px 8px;
+
+    &_disabled,
+    &_high,
+    &_medium,
+    &_low {
+      font-weight: 400;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    &_disabled {
+      background-color: $primary;
+    }
+    &_high {
+      background-color: $chip-high;
+    }
+    &_medium {
+      background-color: $chip-medium;
+    }
+    &_low {
+      background-color: $chip-low;
+    }
+  }
+
+  &-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: 12px;
+
+    &__label {
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    &__filter-severity {
+      background-color: $primary;
+    }
+
+    &__severity-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-main {
+    width: calc(100% - 140px);
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 60vh;
+      overflow: auto;
+    }
+  }
+}
